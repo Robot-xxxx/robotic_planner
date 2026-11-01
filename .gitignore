@@ -1,0 +1,50 @@
+# Build directories
+build/
+build_shared/
+build_*/
+cmake-build-*/
+out/
+install/
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+
+# IDE and editor files
+.vs/
+.vscode/
+.idea/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.user
+
+# Compiled binaries and intermediates
+*.exe
+*.dll
+*.lib
+*.exp
+*.obj
+*.o
+*.pdb
+*.ilk
+*.idb
+*.map
+
+# Generated reports and logs
+plan*.json
+validation*.json
+report*.json
+*.log
+*.err
+
+# Local dependencies and caches
+third_party/
+deps/
+_vendor/
+_deps/
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db

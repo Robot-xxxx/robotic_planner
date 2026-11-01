@@ -1,0 +1,118 @@
+{
+  "robot": {
+    "name": "demo6r",
+    "link_radius": 0.06,
+    "base": { "position": [0.0, 0.0, 0.0] },
+    "joints": [
+      {
+        "name": "j1",
+        "type": "revolute",
+        "axis": [0.0, 0.0, 1.0],
+        "origin": { "position": [0.0, 0.0, 0.30] },
+        "limits": [-3.14, 3.14],
+        "home": 0.0,
+        "velocity_limit": 1.5,
+        "acceleration_limit": 4.0
+      },
+      {
+        "name": "j2",
+        "type": "revolute",
+        "axis": [0.0, 1.0, 0.0],
+        "origin": { "position": [0.04, 0.0, 0.14] },
+        "limits": [-2.6, 2.6],
+        "home": 0.0,
+        "velocity_limit": 1.5,
+        "acceleration_limit": 4.0
+      },
+      {
+        "name": "j3",
+        "type": "revolute",
+        "axis": [0.0, 1.0, 0.0],
+        "origin": { "position": [0.0, 0.0, 0.45] },
+        "limits": [-2.6, 2.6],
+        "home": 0.0,
+        "velocity_limit": 1.5,
+        "acceleration_limit": 4.0
+      },
+      {
+        "name": "j4",
+        "type": "revolute",
+        "axis": [0.0, 0.0, 1.0],
+        "origin": { "position": [0.0, 0.0, 0.40] },
+        "limits": [-3.0, 3.0],
+        "home": 0.0,
+        "velocity_limit": 2.0,
+        "acceleration_limit": 6.0
+      },
+      {
+        "name": "j5",
+        "type": "revolute",
+        "axis": [0.0, 1.0, 0.0],
+        "origin": { "position": [0.0, 0.0, 0.08] },
+        "limits": [-2.5, 2.5],
+        "home": 0.0,
+        "velocity_limit": 2.0,
+        "acceleration_limit": 6.0
+      },
+      {
+        "name": "j6",
+        "type": "revolute",
+        "axis": [0.0, 0.0, 1.0],
+        "origin": { "position": [0.0, 0.0, 0.08] },
+        "limits": [-3.0, 3.0],
+        "home": 0.0,
+        "velocity_limit": 2.5,
+        "acceleration_limit": 8.0
+      }
+    ],
+    "tool": { "position": [0.0, 0.0, 0.18] },
+    "tool_geometry": {
+      "type": "capsule",
+      "a": [0.0, 0.0, 0.0],
+      "b": [0.0, 0.0, 0.10],
+      "radius": 0.03
+    }
+  },
+  "part": {
+    "name": "car_door",
+    "pose": { "position": [0.0, 0.0, 0.0] },
+    "geometry": {
+      "type": "box",
+      "center": [0.80, 0.0, 0.75],
+      "half_extents": [0.03, 0.45, 0.50]
+    }
+  },
+  "obstacles": [],
+  "has_ground": true,
+  "ground_z": 0.0,
+  "surface": {
+    "name": "door_center_patch",
+    "origin": [0.77, -0.06, 0.70],
+    "u_axis": [0.0, 1.0, 0.0],
+    "v_axis": [0.0, 0.0, 1.0],
+    "size": [0.12, 0.10],
+    "normal": [-1.0, 0.0, 0.0]
+  },
+  "scanner": {
+    "standoff": 0.15,
+    "min_standoff": 0.03,
+    "max_standoff": 0.50,
+    "fov_width": 0.04,
+    "overlap": 0.15,
+    "sample_spacing": 0.005,
+    "scan_speed": 0.05,
+    "max_incidence_deg": 60.0
+  },
+  "options": {
+    "collision_margin": 0.005,
+    "collision_step": 0.03,
+    "coverage_cell": 0.002,
+    "ik_max_iterations": 240,
+    "ik_seed_attempts": 10,
+    "max_scan_joint_step": 0.4,
+    "optimize_order": true,
+    "require_full_coverage": true,
+    "sweep_along_u": true,
+    "verbose": false
+  }
+}

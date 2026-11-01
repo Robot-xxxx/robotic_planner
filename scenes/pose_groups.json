@@ -1,0 +1,368 @@
+{
+  "task": {
+    "type": "pose_groups",
+    "return_home": false,
+    "require_all_poses": true,
+    "dwell_time": 0.5,
+    "groups": [
+      {
+        "name": "upper_row",
+        "optimize_order": true,
+        "poses": [
+          {
+            "name": "p0",
+            "position": [
+              0.62,
+              -0.2,
+              0.55
+            ],
+            "rpy_deg": [
+              0.0,
+              90.0,
+              0.0
+            ]
+          },
+          {
+            "name": "p1",
+            "position": [
+              0.62,
+              0.0,
+              0.55
+            ],
+            "rpy_deg": [
+              0.0,
+              90.0,
+              0.0
+            ]
+          },
+          {
+            "name": "p2",
+            "position": [
+              0.62,
+              0.2,
+              0.55
+            ],
+            "rpy_deg": [
+              0.0,
+              90.0,
+              0.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "middle_row",
+        "optimize_order": false,
+        "poses": [
+          {
+            "name": "p3",
+            "position": [
+              0.62,
+              -0.2,
+              0.75
+            ],
+            "rpy_deg": [
+              0.0,
+              90.0,
+              0.0
+            ]
+          },
+          {
+            "name": "p4",
+            "position": [
+              0.62,
+              0.0,
+              0.75
+            ],
+            "rpy_deg": [
+              0.0,
+              90.0,
+              0.0
+            ]
+          },
+          {
+            "name": "p5",
+            "position": [
+              0.62,
+              0.2,
+              0.75
+            ],
+            "rpy_deg": [
+              0.0,
+              90.0,
+              0.0
+            ]
+          },
+          {
+            "name": "p6",
+            "position": [
+              0.62,
+              -0.2,
+              0.95
+            ],
+            "rpy_deg": [
+              0.0,
+              90.0,
+              0.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lower_and_offset",
+        "optimize_order": true,
+        "poses": [
+          {
+            "name": "p7",
+            "position": [
+              0.62,
+              0.0,
+              0.95
+            ],
+            "rpy_deg": [
+              0.0,
+              90.0,
+              0.0
+            ]
+          },
+          {
+            "name": "p8",
+            "position": [
+              0.62,
+              0.2,
+              0.95
+            ],
+            "rpy_deg": [
+              0.0,
+              90.0,
+              0.0
+            ]
+          },
+          {
+            "name": "p9",
+            "position": [
+              0.58,
+              0.0,
+              0.65
+            ],
+            "rpy_deg": [
+              0.0,
+              90.0,
+              0.0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "robot": {
+    "name": "demo6r",
+    "link_radius": 0.06,
+    "base": {
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "joints": [
+      {
+        "name": "j1",
+        "type": "revolute",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": {
+          "position": [
+            0.0,
+            0.0,
+            0.3
+          ]
+        },
+        "limits": [
+          -3.14,
+          3.14
+        ],
+        "home": 0.0,
+        "velocity_limit": 1.5,
+        "acceleration_limit": 4.0
+      },
+      {
+        "name": "j2",
+        "type": "revolute",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin": {
+          "position": [
+            0.04,
+            0.0,
+            0.14
+          ]
+        },
+        "limits": [
+          -2.6,
+          2.6
+        ],
+        "home": 0.0,
+        "velocity_limit": 1.5,
+        "acceleration_limit": 4.0
+      },
+      {
+        "name": "j3",
+        "type": "revolute",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin": {
+          "position": [
+            0.0,
+            0.0,
+            0.45
+          ]
+        },
+        "limits": [
+          -2.6,
+          2.6
+        ],
+        "home": 0.0,
+        "velocity_limit": 1.5,
+        "acceleration_limit": 4.0
+      },
+      {
+        "name": "j4",
+        "type": "revolute",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": {
+          "position": [
+            0.0,
+            0.0,
+            0.4
+          ]
+        },
+        "limits": [
+          -3.0,
+          3.0
+        ],
+        "home": 0.0,
+        "velocity_limit": 2.0,
+        "acceleration_limit": 6.0
+      },
+      {
+        "name": "j5",
+        "type": "revolute",
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "origin": {
+          "position": [
+            0.0,
+            0.0,
+            0.08
+          ]
+        },
+        "limits": [
+          -2.5,
+          2.5
+        ],
+        "home": 0.0,
+        "velocity_limit": 2.0,
+        "acceleration_limit": 6.0
+      },
+      {
+        "name": "j6",
+        "type": "revolute",
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "origin": {
+          "position": [
+            0.0,
+            0.0,
+            0.08
+          ]
+        },
+        "limits": [
+          -3.0,
+          3.0
+        ],
+        "home": 0.0,
+        "velocity_limit": 2.5,
+        "acceleration_limit": 8.0
+      }
+    ],
+    "tool": {
+      "position": [
+        0.0,
+        0.0,
+        0.18
+      ]
+    },
+    "tool_geometry": {
+      "type": "capsule",
+      "a": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "b": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "radius": 0.03
+    }
+  },
+  "part": {
+    "name": "car_door",
+    "pose": {
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "geometry": {
+      "type": "box",
+      "center": [
+        0.8,
+        0.0,
+        0.75
+      ],
+      "half_extents": [
+        0.03,
+        0.45,
+        0.5
+      ]
+    }
+  },
+  "obstacles": [],
+  "has_ground": true,
+  "ground_z": 0.0,
+  "options": {
+    "collision_margin": 0.005,
+    "collision_step": 0.03,
+    "ik_max_iterations": 240,
+    "ik_seed_attempts": 12,
+    "optimize_order": true,
+    "require_all_poses": true,
+    "return_home": false,
+    "motion_backend": "ompl_rrtconnect",
+    "ompl_time_limit": 0.5,
+    "ompl_simplify": true
+  }
+}
